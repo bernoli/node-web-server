@@ -1,7 +1,7 @@
 var express = require('express');
 var middleware = require('./middleware').middleware;
 var app = express(); // cerating express app
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // middlewares are like filters in asp.net? you add them at a chain in a pipeline previous to the page request
 // this way we can add cross cutting behaviors to routes level or at global for exmaple we can log any request. 
